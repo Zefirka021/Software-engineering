@@ -1,0 +1,9 @@
+students = [("olegsander", "man", "great"),
+("elena", "woman", "bad"),
+("nick", "man", "bad"),
+("nika", "woman", "ok"), ]
+
+def krasavi(x):
+	name, sex, mark = x
+	return mark in ["great", "ok"]
+print("res:", [x[0] for x in students if krasavi(x) and x[1] == "man"])
